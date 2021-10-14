@@ -9,7 +9,7 @@ const config = {
 
   KUBER: {
     streams: {
-      stagingArea: 'https://staging-area-crud-dev-f5i63t.priv.nprd.pcdp.adeo.cloud'
+      stagingArea: 'http://localhost:8080/'
     }
   }
 };
