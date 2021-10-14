@@ -15,12 +15,11 @@ describe('___ Check upload of excel file', () => {
     let response;
 
     before('Upload file', async () => {
-      response = await stagingArea.uploadFile('lmruTest1.xlsx', path, 'lmruTest1', '98765');
+      response = await stagingArea.uploadFile('testmodel1.xlsx', path, 'model1', '98765');
     });
 
     it('Upload success', async () => {
-      console.log(response.errMessage);
-      expect(response.statusCode, response.message).to.equal(200);
+      expect(response.statusCode, response.errMessage).to.equal(200);
     });
   });
 });

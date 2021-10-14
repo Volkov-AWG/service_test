@@ -4,12 +4,15 @@ const config = {
   COMMON: {
     stagingAreaOptions: {
       admin: 'Basic YWRtaW46aDdeZ0RiMTNIYjg2Jg=='
+    }
   },
 
-  KUBER: { 
+  KUBER: {
     streams: {
-      stagingArea: 'https://staging-area-crud-dev-f5i63t.priv.nprd.pcdp.adeo.cloud',
-  };
+      stagingArea: 'https://staging-area-crud-dev-f5i63t.priv.nprd.pcdp.adeo.cloud'
+    }
+  }
+};
 
 process.env.ENV = 'KUBER';
 

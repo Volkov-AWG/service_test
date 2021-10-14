@@ -1,14 +1,14 @@
 const BaseApi = require('classes/BaseApi');
 const FormData = require('form-data');
 const fs = require('fs');
-const config = require('config').streams;
+const config = require('config');
 
 class StagingAreaCrud extends BaseApi {
   constructor(server = config.streams.stagingArea, options = {}) {
     super(server, options);
   }
 
-  uploadFile(file, path, model_id, partner_code, authorization = 'Basic YWRtaW46aDdeZ0RiMTNIYjg2Jg==') {
+  uploadFile(file, path, model_id, partner_code, authorization = config.stagingAreaOptions.admin) {
     const headers = (authorization !== false) ? { authorization } : {};
     const data = new FormData();
 
