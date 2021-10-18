@@ -3,7 +3,7 @@ const merge = require('deepmerge');
 const config = {
   COMMON: {
     stagingAreaOptions: {
-      admin: 'Basic YWRtaW46aDdeZ0RiMTNIYjg2Jg=='
+      admin: 'Basic YWRtaW46YWRtaW4='
     }
   },
 

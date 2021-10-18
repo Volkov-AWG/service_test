@@ -1,0 +1,32 @@
+{
+    "port": 80,
+    "protocol": "http",
+    "name": "test",
+    "stubs":
+    [
+        {
+            "predicates":
+            [
+                {
+                    "equals":
+                    {
+                        "method": "GET",
+                        "path": "/v1/models/1234"
+                    }
+                }
+            ],
+            "responses":
+            [
+                {
+                    "is":
+                    {
+                        "StatusCode": 200,
+                        "body":{
+                            "message":"message"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
