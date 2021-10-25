@@ -19,7 +19,7 @@ describe('___ Check upload of excel file', () => {
     });
 
     it('Upload success', async () => {
-      expect(response.statusCode, response.errMessage).to.equal(200);
+      expect(response.statusCode, response.errMessage).to.equal(202);
     });
   });
 });
