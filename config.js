@@ -9,7 +9,7 @@ const config = {
 
   KUBER: {
     streams: {
-      stagingArea: 'http://localhost:8080/'
+      stagingArea: 'http://10.10.0.7:8080/'
     }
   }
 };
